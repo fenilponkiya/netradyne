@@ -39,3 +39,10 @@ html {
 ::-webkit-scrollbar-thumb:hover {
   background: #a8a8a8;
 }
+
+/* Suppress hydration warnings caused by browser extensions */
+[bis_skin_checked],
+[__processed_bc1badec-827a-4a99-b38b-dfd6c5c20b07__],
+[bis_register] {
+  /* These attributes are added by browser extensions and should not affect styling */
+}

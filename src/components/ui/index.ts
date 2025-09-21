@@ -12,3 +12,5 @@ export type { CustomIconButtonProps } from "./IconButton";
 
 export { default as Box } from "./Box";
 export type { CustomBoxProps } from "./Box";
+
+export { default as NoSSR } from "./NoSSR";
