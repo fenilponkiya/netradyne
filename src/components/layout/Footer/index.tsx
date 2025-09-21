@@ -39,7 +39,7 @@ const FooterGrid = styled(Box)(({ theme }) => ({
   },
 }));
 
-const FooterColumn = styled(Box)(({ theme }) => ({
+const FooterColumn = styled(Box)(({}) => ({
   display: "flex",
   flexDirection: "column",
 }));
@@ -212,7 +212,7 @@ const Footer: React.FC = () => {
 
       <FooterSection>
         <Container size="xl">
-          <Box sx={{ display: "flex", flexDirection: "column" }}>
+          <Box sx={{ display: "flex", flexDirection: "column" }} suppressHydrationWarning={true}>
             <Box sx={{ mb: 6 }}>
               <Image
                 width={200}
@@ -271,7 +271,7 @@ const Footer: React.FC = () => {
               </FooterColumn>
             </FooterGrid>
 
-            <Box sx={{ display: "flex", justifyContent: "flex-start", mb: 2 }}>
+            <Box sx={{ display: "flex", justifyContent: "flex-start", mb: 2 }} suppressHydrationWarning={true}>
               <SocialIconsContainer>
                 <SocialIcon>
                   <LinkedInIcon sx={{ fontSize: "20px" }} />
@@ -304,7 +304,10 @@ const Footer: React.FC = () => {
                 <FooterLink sx={{ mb: 0 }}>Privacy</FooterLink>
                 <FooterLink sx={{ mb: 0 }}>Cookies</FooterLink>
                 <FooterLink sx={{ mb: 0 }}>Security</FooterLink>
-                <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
+                <Box 
+                  sx={{ display: "flex", alignItems: "center", gap: 1 }}
+                  suppressHydrationWarning={true}
+                >
                   <Typography
                     variant="body2"
                     sx={{

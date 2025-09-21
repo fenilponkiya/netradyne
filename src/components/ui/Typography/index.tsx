@@ -139,7 +139,7 @@ const Typography: React.FC<CustomTypographyProps> = ({
 
   return (
     <StyledTypography
-      variant={isCustomVariant ? "body1" : (variant as any)}
+      variant={isCustomVariant ? "body1" : (variant as MuiTypographyProps["variant"])}
       customcolor={color !== "inherit" ? color : undefined}
       weight={weight}
       customvariant={isCustomVariant ? variant : undefined}

@@ -43,32 +43,6 @@ const VideoSection = styled(Box)(({ theme }) => ({
   position: "relative",
 }));
 
-const StatsGrid = styled(Box)(({ theme }) => ({
-  display: "grid",
-  gridTemplateColumns: "repeat(2, 1fr)",
-  gap: theme.spacing(4),
-  marginTop: theme.spacing(8),
-  [theme.breakpoints.up("md")]: {
-    gridTemplateColumns: "repeat(4, 1fr)",
-  },
-}));
-
-const StatItem = styled(Box)(({ theme }) => ({
-  textAlign: "center",
-  padding: theme.spacing(3),
-}));
-
-const StatIcon = styled(Box)(({ theme }) => ({
-  width: "60px",
-  height: "60px",
-  borderRadius: "50%",
-  display: "flex",
-  alignItems: "center",
-  justifyContent: "center",
-  margin: "0 auto",
-  marginBottom: theme.spacing(2),
-}));
-
 const Hero: React.FC = () => {
   const stats = [
     {
@@ -99,13 +73,13 @@ const Hero: React.FC = () => {
       <HeroSection>
         <Container size="xl">
           <HeroImageContainer>
-            <img
+            <Image
               src="https://cdn.prod.website-files.com/661587090828dbbd6ac283cc/681e8489de6bd665ab917ad9_9a35bb8ac7ee6c0701076af720b36de0_Netradyne_Homepage_Hero_US.avif"
               alt="Netradyne Hero Image showcasing fleet management technology"
+              fill
               style={{
                 objectFit: "contain",
                 objectPosition: "center",
-                width: "100%",
               }}
             />
           </HeroImageContainer>
@@ -397,12 +371,11 @@ const Hero: React.FC = () => {
                   order: { xs: -1, lg: 1 },
                 }}
               >
-                <img
+                <Image
                   src="https://cdn.prod.website-files.com/661587090828dbbd6ac283cc/6737ebd2667430263c3c3fc6_Netradyne_Home_Hero_Image_2.webp"
                   alt="Happy driver in safety vest showing fleet management success"
+                  fill
                   style={{
-                    width: "100%",
-                    height: "100%",
                     objectFit: "cover",
                     objectPosition: "center",
                   }}
@@ -465,7 +438,7 @@ const Hero: React.FC = () => {
                     color="white"
                     sx={{ opacity: 0.9, mb: 3 }}
                   >
-                    Whether it's fatigue or everyday distractions like checking
+                    Whether it&apos;s fatigue or everyday distractions like checking
                     a phone, our technology is designed to recognize signs of
                     inattention. When it detects a lapse in focus, it gently
                     prompts the driver with an audio alert—helping them stay
@@ -505,7 +478,7 @@ const Hero: React.FC = () => {
                       color="white"
                       sx={{ opacity: 0.8 }}
                     >
-                      Driver•i instantly detected distraction and gave an audio
+                      Driver&bull;i instantly detected distraction and gave an audio
                       alert, and the driver corrected his behavior.
                     </Typography>
                   </Box>

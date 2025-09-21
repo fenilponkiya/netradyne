@@ -10,11 +10,11 @@ const AwardsSection = styled(Box)(({ theme }) => ({
   position: "relative",
 }));
 
-const AwardCard = styled(Box)(({ theme }) => ({
+const AwardCard = styled(Box)(({}) => ({
   textAlign: "center",
 }));
 
-const AwardIcon = styled(Box)(({ theme }) => ({
+const AwardIcon = styled(Box)(({}) => ({
   margin: "0 auto 24px",
   borderRadius: "12px",
   display: "flex",

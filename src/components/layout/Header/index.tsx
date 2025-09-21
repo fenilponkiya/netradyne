@@ -6,7 +6,6 @@ import {
   Box,
   Menu,
   MenuItem,
-  useMediaQuery,
   useTheme,
   Divider,
 } from "@mui/material";
@@ -34,7 +33,7 @@ const StyledAppBar = styled(AppBar)(({ theme }) => ({
   },
 }));
 
-const NavItem = styled(Box)(({ theme }) => ({
+const NavItem = styled(Box)(({}) => ({
   display: "flex",
   alignItems: "center",
   cursor: "pointer",
@@ -64,7 +63,6 @@ const MobileMenu = styled(Box)(({ theme }) => ({
 
 const Header: React.FC = () => {
   const theme = useTheme();
-  const isMobile = useMediaQuery(theme.breakpoints.down("lg"));
   const [mobileMenuAnchor, setMobileMenuAnchor] = useState<null | HTMLElement>(
     null
   );

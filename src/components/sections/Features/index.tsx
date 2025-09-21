@@ -3,7 +3,7 @@
 import React from "react";
 import { Box } from "@mui/material";
 import { styled } from "@mui/material/styles";
-import { Button, Typography, Container } from "@/components/ui";
+import { Typography, Container } from "@/components/ui";
 import Image from "next/image";
 
 const FeaturesSection = styled(Box)(({ theme }) => ({
@@ -31,7 +31,7 @@ const FeatureRow = styled(Box)(({ theme }) => ({
   },
 }));
 
-const FeatureCard = styled(Box)(({ theme }) => ({
+const FeatureCard = styled(Box)(() => ({
   position: "relative",
   borderRadius: "20px",
   overflow: "hidden",
@@ -41,7 +41,7 @@ const FeatureCard = styled(Box)(({ theme }) => ({
   justifyContent: "center",
 }));
 
-const FeatureContent = styled(Box)(({ theme }) => ({
+const FeatureContent = styled(Box)(() => ({
   maxWidth: "500px",
 }));
 

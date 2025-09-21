@@ -100,7 +100,7 @@ const CustomerTestimonials: React.FC = () => {
                 lineHeight: 1.4,
               }}
             >
-              "{testimonials[0].quote}"
+              &ldquo;{testimonials[0].quote}&rdquo;
             </Typography>
 
             <Typography
@@ -173,7 +173,7 @@ const CustomerTestimonials: React.FC = () => {
                 lineHeight: 1.6,
               }}
             >
-              "{testimonial.quote}"
+              &ldquo;{testimonial.quote}&rdquo;
             </Typography>
           </TestimonialCard>
         ))}
